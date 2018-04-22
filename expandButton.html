@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="./scripts.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="./style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<!-- Текст кнопки берем в Р тэги чтоб была привязка скрипта к тексту, а не кнопке
-	 В реальном проэкте нужно тэгу Р присвоить уникальный айди, к которому привяжем скрипт -->
-<button><p>Start Animation</p></button>
 
+<h2>Добро пожаловать</h2>
+<p id="changetext">Здесь у нас есть текст, который меняется при наведении с помощью Джаваскрипта</p>
 
+<div class="dropdown" style="float:right">
+  <button class="dropbtn">Меню</button>
+  <div class="dropdown-content">
+    <a href="#">О нас</a>
+    <a href="#">Услуги</a>
+    <a href="#">Контакты</a>
+  </div>
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./scripts.js"></script>
 </body>
 </html>
