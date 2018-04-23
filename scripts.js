@@ -25,3 +25,23 @@ $(document).ready(function(){
 */
 			});
 });
+
+// Эта же функция привязана к айди новой кнопки с сохранением исходного текста в переменную
+
+let oldText = $('#expand').text();
+let oldWidth = $('#expand').css('width');
+
+$(document).ready(function(){
+			$('#expand').hover(function() {
+				$(this).text("Широкая кнопка");
+				$("#expand").animate({
+            width: '200px'
+	        })
+			},
+			function() {
+				$(this).text(oldText);
+				$("#expand").animate({
+			width: oldWidth
+			});
+			});
+});
