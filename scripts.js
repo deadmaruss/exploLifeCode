@@ -35,7 +35,7 @@ $(document).ready(function(){
 			$('#expand').hover(function() {
 				$(this).text("Широкая кнопка");
 				$("#expand").animate({
-            width: '200px'
+            width: '300px'
 	        })
 			},
 			function() {
