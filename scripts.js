@@ -33,7 +33,7 @@ let oldWidth = $('#expand').css('width');
 
 $(document).ready(function(){
 			$('#expand').hover(function() {
-				$(this).text("Широкая кнопка");
+				$(this).text("------ Узнать больше");
 				$("#expand").animate({
             width: '300px'
 	        })
