@@ -34,14 +34,14 @@ let oldWidth = $('#expand').css('width');
 $(document).ready(function(){
 			$('#expand').hover(function() {
 				$(this).text("------ Узнать больше");
-				$("#expand").animate({
-            width: '300px'
-	        })
+		//		$("#expand").animate({
+        //    width: '300px'
+	    //    })
 			},
 			function() {
 				$(this).text(oldText);
-				$("#expand").animate({
-			width: oldWidth
-			});
+		//		$("#expand").animate({
+		//	width: oldWidth
+	//		});
 			});
 });
