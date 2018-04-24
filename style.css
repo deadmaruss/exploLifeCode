@@ -1,4 +1,26 @@
+body {
+	background: url(img/background.png) no-repeat center center fixed;
+	background-size: cover;	
+}
 
+.line {
+    border-bottom: 1px solid yellow;
+    border-top: 1px solid yellow;
+	width: 50px;
+	margin-top: 17px;
+	margin-left: 20px;
+}
+
+span {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.buttonText {
+	margin-top: 5px;
+	margin-right: 15px;
+	font-family: 'Helvetica Neue';
+}
 
 .dropbtn{
     background-color: #4CAF50;
@@ -9,17 +31,17 @@
     cursor: pointer;
 }
 
-#expand{
-    background-color: black;
+.newButton{
+    background-color: transparent;
     color: white;
-    padding: 16px;
-    font-size: 16px;
+    padding: 0px;
+    font-size: 24px;
     border: solid;
     border-radius: 45px;
     border-color: orange;
     cursor: pointer;
-    width: 400px;
-    display: inline-block;
+    width: 350px;
+	height: 35px;
 }
 
 .dropdown {
@@ -53,4 +75,9 @@
 
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
+}
+
+@font-face {
+    font-family: Helvetica Neue;
+    src: url(extra/helvetica_neue.ttf);
 }
