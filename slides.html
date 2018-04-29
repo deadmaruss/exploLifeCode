@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="./style.css" rel="stylesheet" type="text/css" />
+<style>
+* {box-sizing: border-box}
+
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="img/background.png" style="width:100%">
+  <div class="slide1title"></div>
+  <div class="slide1text"></div>
+  <div class="buttonDiv">
+  <div class="newButton" style="float:left">
+  <div class="line" style="float:left"></div>
+  <span class="buttonText" style="float:right">УЗНАТЬ БОЛЬШЕ</span>
+</div>
+</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="img/background.png" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="img/background.png" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+<!-- Slider switching arrows
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+-->
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="./scripts.js"></script>
+</body>
+</html> 
