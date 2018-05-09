@@ -1,53 +1,31 @@
-let oldWidth = $('.line').css('width');
+let oldWidth = $('.line').css('width')
 
-$(document).ready(function(){
-			$('.newButton').hover(function() {
-				$(".line").animate({
-            width: '100px'
-			})
-			},
-			function() {
-				$(".line").animate({
-			width: oldWidth
-			});
-			});
-});
+$(document).ready(function () {
+  $('.newButton').hover(function () {
+    $('.line').animate({
+      width: '100px'
+    })
+  },
+  function () {
+    $('.line').animate({
+      width: oldWidth
+    })
+  })
+})
 
-/*
-$(document).ready(function(){
-			$('.newButton').hover(function() {
-				$(".line").animate({width: '80px'});
-				$(".buttonText").animate({left: '70px'})
-			},
-			function() {
-				$(".line").animate({width: oldWidth});
-				$(".buttonText").animate({right: '70px'})
-			});
-});
-*/
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function dropdownButton () {
+  document.getElementById('dropdownMenu').classList.toggle('show')
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+window.onclick = function (event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName('dropdown-content')
+    var i
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i]
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show')
+      }
+    }
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
 }
