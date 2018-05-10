@@ -7,7 +7,6 @@ html {
 
 body {
     height: 100%;
-
 }
 
 #slideOneFiller {
@@ -91,7 +90,7 @@ span {
 
 .dropdown {
     position: relative;
-	display: inherit;
+    display: inherit;
     margin-top: -120px;
 }
 
@@ -117,18 +116,21 @@ span {
     text-decoration: none;
     display: block;
     position: relative;
-    top: 35%;
-	right: 0px;
+    top: 20%;
+    right: 150px;
     margin-top: 20px;
-    margin-right: 50px;
-	text-align: right;
-
+    margin-right: 10px;
+    margin-left: 400px;
+    text-align: right;
+    width: 100px;
+    font-family: 'Helvetica Neue';
 }
 
 /* Change color of dropdown links on hover */
 
 .dropdown-content a:hover {
-    background-color: black;
+    border-bottom: 1px solid yellow;
+    margin-bottom: -1.3px;
 }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */

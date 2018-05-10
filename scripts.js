@@ -1,4 +1,5 @@
 let oldWidth = $('.line').css('width')
+let oldPosition = $('.dropbtn').css('right')
 
 $(document).ready(function () {
   $('.newButton').hover(function () {
@@ -25,7 +26,18 @@ window.onclick = function (event) {
       var openDropdown = dropdowns[i]
       if (openDropdown.classList.contains('show')) {
         openDropdown.classList.remove('show')
+        $('.dropbtn').animate({
+          right: oldPosition
+        })
       }
     }
   }
 }
+
+$(document).ready(function () {
+  $('.dropbtn').click(function () {
+    $('.dropbtn').animate({
+      right: '+100px'
+    })
+  })
+})
