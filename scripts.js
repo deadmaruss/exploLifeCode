@@ -1,5 +1,4 @@
 let oldWidth = $('.line').css('width')
-let oldPosition = $('.dropbtn').css('right')
 
 $(document).ready(function () {
   $('.newButton').hover(function () {
@@ -16,28 +15,35 @@ $(document).ready(function () {
 
 function dropdownButton () {
   document.getElementById('dropdownMenu').classList.toggle('show')
+  document.getElementById('slideOneFiller').classList.toggle('hide')
+  buttonAnimate()
+  
 }
 
 window.onclick = function (event) {
   if (!event.target.matches('.dropbtn')) {
+	var slideText = document.getElementById('slideOneFiller')
     var dropdowns = document.getElementsByClassName('dropdown-content')
     var i
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i]
       if (openDropdown.classList.contains('show')) {
         openDropdown.classList.remove('show')
-        $('.dropbtn').animate({
-          right: oldPosition
-        })
+		slideText.classList.remove('hide')
+		buttonAnimate()
       }
     }
   }
 }
 
-$(document).ready(function () {
-  $('.dropbtn').click(function () {
+function buttonAnimate () {
+  if ($('.dropbtn').css('right') == '0px' ) {
     $('.dropbtn').animate({
-      right: '+100px'
+      right: '100px'
     })
-  })
-})
+  } else {
+    $('.dropbtn').animate({
+      right: '0px'
+    })
+  }
+}

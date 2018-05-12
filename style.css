@@ -143,3 +143,12 @@ span {
     font-family: Helvetica Neue;
     src: url(extra/helvetica_neue.ttf);
 }
+
+/* TODO: fix mobile view
+
+@media only screen and (orientation: portrait) {
+    .hide {
+        display: none;
+    }
+}
+*/
