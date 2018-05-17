@@ -1,0 +1,153 @@
+html {
+    background-color: #242424;
+    width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    font-family: 'Helvetica Neue';
+}
+
+.header {
+    margin-left: -7px;
+    height: 4vh;
+    border-bottom: 0.5px solid grey;
+}
+
+.language-switch {
+    float: left; 
+    position: absolute;
+}
+
+.language-switch a{
+    position: relative;
+    left: 5vw;
+    text-decoration: none;
+    color: white;
+}
+
+.socials {
+    position: relative;
+    left: 35vw;
+    margin-top: 20px;
+    min-width: 200px;
+    max-width: 1000px;
+}
+
+.socials a{
+    text-decoration: none;
+}
+
+.contact-number {
+    position: relative;
+    float: right;
+    color: white;
+    top: -35px;
+    right: 7.5vw;
+}
+
+.navbar {
+    height: 13vh;
+}
+
+.navbar img{
+    position: absolute;
+    left: 5vw;
+    margin-top: 2vh;
+    float: left;
+}
+
+.navigation {
+    position: relative;
+    float: right;
+    margin-top: 3.5vh;
+}
+
+.navigation a{
+    margin: 1vw;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+.navigation a:hover{
+    color: yellow;
+    padding-bottom: 10px;
+    border-bottom: 1px solid yellow;
+}
+
+.content-breaker {
+    height: 5vh;
+}
+
+.content-breaker h1{
+    float: right;
+    margin-right: 7.5vw;
+    margin-top: -27px;
+    color: white;
+    font-size: 48px;
+}
+
+.line {
+    float: left;
+    border-bottom: 1px solid yellow;
+    border-top: 1px solid yellow;
+    width: 75vw;
+    margin-left: -7px;
+}
+
+.content {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    width: 60vw;
+
+}
+
+.item {
+
+    position: relative;
+    display: inline-block;
+}
+
+.item p{
+    color: white;
+    width: 250px;
+}
+
+.thumbnail {
+    border: 0px;
+    position: relative;
+      border-radius: 0;
+      margin-bottom:50px;
+      padding: 25px;
+   }
+
+.content-breaker-bottom {
+    bottom: 3vh;
+}
+
+.copywrite {
+    position: relative;
+    max-width: 500px;
+    left: 5vw;
+}
+
+.copywrite p{
+    color: white;
+}
+
+iframe {
+    position: relative;
+    left: 5vw;
+    margin-top: 1vw;
+    margin-bottom: 4vw;
+}
+
+@font-face {
+    font-family: Helvetica Neue;
+    src: url(extra/helvetica_neue.ttf);
+}

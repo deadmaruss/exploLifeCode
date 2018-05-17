@@ -2,7 +2,8 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-<link href="./style.css" rel="stylesheet" type="text/css" />
+<link href="./front.css" rel="stylesheet" type="text/css" />
+<title>Explosion Life - Digital Design Studio</title>
 </head>
 <body>
 <div class="header">
@@ -12,31 +13,86 @@
     <a href="#facebook"><img src="img/facebook-letter-logo.png" /></a>
 </div>
 </div>
-<div id="slideOneFiller">
+
+<div class="dropdown" style="float:right">
+  <button onclick="dropdownButton()" class="dropbtn" id="dropButton">||| Меню</button>
+  <div id="dropdownMenu" class="dropdown-content">
+    <a href="./index.html">Главная</a>
+    <a href="./about-us.html">О нас</a>
+    <a href="./services.html">Услуги</a>
+    <a href="./portfolio.html">Портфолио</a>
+    <a href="./blog.html">Блог</a>
+    <a href="./contacts.html">Контакты</a>
+  </div>
+</div>
+
+<div class="sliderButtons">
+    <a href="javascript:gotoSlideOne()"><div class="slider-switch" id="buttonOne"></div></a><br>
+    <a href="javascript:gotoSlideTwo()"><div class="slider-switch" id="buttonTwo"></div></a><br>
+    <a href="javascript:gotoSlideThree()"><div class="slider-switch" id="buttonThree"></div></a><br>
+  </div>
+
+<div id="slideOne" style="float:left">
+  <div class="slideContent">
 <div class="topText">
   <p>РАЗРАБОТКА <br><span id="yellowTop">ПРИЛОЖЕНИЙ</span></p>
 </div>
 <div class="bottomText">
   <p>Лучшее решение для создания правильного приложения, которое поднимет ваш бизнес на новый уровень</p>
 </div>
-<a href="http://explolife.com" target="_blank">
+<a href="javascript:gotoSlideTwo()">
 <div class="newButton" style="float:left">
 	<div class="line" style="float:left"></div>
 	<span class="buttonText" style="float: right">УЗНАТЬ БОЛЬШЕ</span>
 </div>
 </a>
 </div>
+</div>
 
-<div class="dropdown" style="float:right">
-  <button onclick="dropdownButton()" class="dropbtn" id="dropButton">||| Меню</button>
-  <div id="dropdownMenu" class="dropdown-content">
-    <a href="#">Главная</a>
-    <a href="#">О нас</a>
-    <a href="#">Услуги</a>
-    <a href="#">Портфолио</a>
-    <a href="#">Блог</a>
-    <a href="#">Контакты</a>
+<div id="slideTwo" style="float: left">
+      <div class="slideContent">
+  <div class="topText">
+    <p>РАЗРАБОТКА
+      <br>
+      <span id="yellowTop">ВЕБ-САЙТОВ</span>
+    </p>
   </div>
+  <div class="bottomText">
+    <p> Создание бизнес сайта – одна из основных задач, которые ставят перед собой начинающие предприниматели, а также компании,
+    которые стремятся идти в ногу со временем и расширять свои границы влияния на аудиторию. Решая заказать сайт, вы, конечно
+    же задаетесь вопросом, какая веб-дизайн студия предоставит лучшие услуги
+</p>
+  </div>
+  <a href="javascript:gotoSlideThree()">
+    <div class="newButton" style="float:left">
+      <div class="line" style="float:left"></div>
+      <span class="buttonText" style="float: right">А ЕСТЬ БОЛЬШЕ?</span>
+    </div>
+  </a>
+  </div>
+</div>
+
+<div id="slideThree" style="float:left">
+      <div class="slideContent">
+  <div class="topText">
+    <p>Мы – молодая, креативная команда
+      <br>
+      <span id="yellowTop">мы – студия дизайна Explosion Life</span>
+    </p>
+  </div>
+  <div class="bottomText">
+    <p>Мы понимаем, как важно подходить к любому проекту с установкой на успех. Каждая мелочь в нашей работе пропитана любовью и
+    стремлением получить лучший результат. Поэтому обратившись за любой услугой, будь то веб дизайн или разработка корпоративного
+    стиля, вы можете быть уверены, что получите уникальный, качественный продукт.</p>
+    <p> Можно много говорить о наших методах, планах, опыте, но лучше всего просто увидеть на деле, ведь так? Мы готовы показать.</p>
+  </div>
+  <a href="http://explosion.life" target="_blank">
+    <div class="newButton" style="float:left">
+      <div class="line" style="float:left"></div>
+      <span class="buttonText" style="float: right">ПОКАЖИТЕ!</span>
+    </div>
+  </a>
+</div>
 </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
