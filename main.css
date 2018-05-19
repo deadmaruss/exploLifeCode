@@ -101,10 +101,8 @@ body {
 .content {
     position: relative;
     margin-top: 50px;
-    margin-left: 20vw;
-    margin-right: 20vw;
-    width: 60vw;
-
+    left: 4vw;
+    width: 90vw;
 }
 
 .item {
@@ -124,6 +122,8 @@ body {
       border-radius: 0;
       margin-bottom:50px;
       padding: 25px;
+    max-width: 300px;
+    height: 300px;
    }
 
 .content-breaker-bottom {
@@ -142,9 +142,32 @@ body {
 
 iframe {
     position: relative;
-    left: 5vw;
-    margin-top: 1vw;
+    left: -20.4vw;
     margin-bottom: 4vw;
+    float: left;
+}
+
+.contact-info {
+    height: 450px;
+    position: absolute;
+    margin-right: 21.2vw;
+    right: 0px;
+    width: 50%;
+}
+
+.contact-info img {
+    position: absolute;
+    right: 0px;
+    top: -40px;
+    
+}
+
+.contact-info p {
+    text-align: right;
+    color: black;
+    font-size: 26px;
+    position: relative;
+    margin-right: 10px;
 }
 
 @font-face {

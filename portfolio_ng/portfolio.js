@@ -23,7 +23,7 @@ PortfolioApp.controller('PortfolioController', function($scope){
             cathegory: 'РАЗРАБОТКА САЙТОВ'
         },
         {
-            title: 'ДИЗАЙН ЛОГОТИПА ELPARSO',
+            title: 'ДИЗАЙН ЛОГОТИПА ELPARSO         ',
             coverImage: 'portfolio_ng/logo-elparso-for-site.png',
             cathegory: 'BRANDING'
         },
